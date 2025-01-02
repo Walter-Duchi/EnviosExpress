@@ -1,3 +1,7 @@
 <x-app-layout :title="'Home'">
-    <h1>hello World</h1>
+    <x-carousel />
+    <x-offer />
+    <x-product />
+    <x-ad />
+    <x-footer />
 </x-app-layout>
