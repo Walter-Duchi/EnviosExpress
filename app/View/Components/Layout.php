@@ -6,14 +6,16 @@ use Closure;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 
-class app-layout extends Component
+class Layout extends Component
 {
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct(
+        public string $title = ''
+    )
     {
-        //
+        
     }
 
     /**
@@ -21,6 +23,6 @@ class app-layout extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.app-layout');
+        return view('components.layout');
     }
 }
